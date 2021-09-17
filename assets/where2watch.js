@@ -6,10 +6,6 @@ $(document).ready(() => {
 });
 });
 
-function getMovies(searchText) {
-    axios.get
-}
-
 var axios = require("axios").default;
 
 var options = {
