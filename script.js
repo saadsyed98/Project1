@@ -13,9 +13,4 @@ fetch("https://gowatch.p.rapidapi.com/lookup/title/imdb_id", {
 		"country": "us"
 	}
 })
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+.then(response => 
