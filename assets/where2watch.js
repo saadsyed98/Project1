@@ -1,5 +1,24 @@
+$(document).ready(() => {
+	console.log("we're active")
+});
 
-// Utelly API =========================>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*// Utelly API =========================>
 fetch("https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/idlookup?source_id=tt3398228&source=imdb&country=us", {
 	"method": "GET",
 	"headers": {
@@ -36,4 +55,4 @@ fetch("https://gowatch.p.rapidapi.com/lookup/title/imdb_id", {
 .catch(err => {
 	console.error(err);
 });
-// ==============================>
+// ==============================>*/
