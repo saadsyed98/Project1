@@ -5,20 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-        <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
+    <link href="/assets/style.css" rel="stylesheet">
+    <title>Where To Watch</title>
 </head>
 
+<body>
+    <nav class="navbar navbar-default"></nav>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Movie Info</a>
+            </div>
+        </div>
+    </nav>
 
-    <body class="flex-column min-100-vh">
-        <header class="hero">
-        <h1>Lookup a TV show or Movie!!</h1>
-            <div class="form-box">
-            <input id="text" class="search-field" placeholder="Search TV Shows or Movies">
-            <button class="search-btn" type="button">Search</button>
-    </header>
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="align-left">Search For Any Movie</h3>
+            <form id="searchForm">
+            <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
+        </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
 
 
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/assets/where2watch.js"></script>  
 </body>
 
-</html>
+</html> 

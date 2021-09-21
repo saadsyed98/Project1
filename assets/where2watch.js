@@ -1,5 +1,54 @@
+$(document).ready(() => {
+//	console.log("we're active")
+	$('#searchForm').on('submit', (e) => {
+		let searchText = $('#searchText').val();
+		getMovies(searchText);
+		e.preventDefault();
+	}); 
+});
 
-// Utelly API =========================>
+function getMovies(searchText) {
+  axios.get('http://www.omdbapi.com/?s=${searchText}&apikey=2fdaf280')
+	
+	.then(response => {
+		console.log(response);
+		let movies = response.data.Search;
+		let output = '';
+		$.each(movies, (index, movie) => {
+			output += `
+			<div class = "col-md-3">
+			<div class = "well text-center">
+			<img src = "${movie.Poster}" 
+			<h5> ${movie.Title}</h5>
+			<a onclick = "movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
+			`;
+		});
+		
+		$('#movies').html(output);
+	})
+	.catch(err => {
+		console.error(err);
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*// Utelly API =========================>
 fetch("https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/idlookup?source_id=tt3398228&source=imdb&country=us", {
 	"method": "GET",
 	"headers": {
@@ -36,4 +85,4 @@ fetch("https://gowatch.p.rapidapi.com/lookup/title/imdb_id", {
 .catch(err => {
 	console.error(err);
 });
-// ==============================>
+// ==============================>*/}
