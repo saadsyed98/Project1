@@ -8,7 +8,7 @@ $(document).ready(() => {
 });
 
 function getMovies(searchText) {
-  axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=2fdaf280')
+  axios.get('http://www.omdbapi.com/?s=${searchText}&apikey=2fdaf280')
 	
 	.then(response => {
 		console.log(response);
@@ -29,6 +29,8 @@ function getMovies(searchText) {
 	.catch(err => {
 		console.error(err);
 	});
+
+
 
 
 
