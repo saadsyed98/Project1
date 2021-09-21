@@ -9,7 +9,6 @@ $(document).ready(() => {
 
 function getMovies(searchText) {
   axios.get('http://www.omdbapi.com?s='+ searchText+'&apikey=thewdb') 
-	
 	.then(response => {
 		console.log(response);
 		let movies = response.data.results;
