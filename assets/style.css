@@ -34,3 +34,19 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
+
+.jumbotron {
+  color: purple;
+  font-weight: bold;
+  background-color: lightgrey;
+  margin-top: 50px;
+}
+
+.container {
+  color: black;
+  font-size: x-large;
+}
+
+.text-center {
+  font-size: 40px;
+}
