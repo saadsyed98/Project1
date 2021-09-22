@@ -75,6 +75,8 @@ function getMovie() {
 		console.error(err);
 	});
 
+	getSource();
+
 }
 
 
