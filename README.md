@@ -18,7 +18,8 @@ A website that contains a library of movies. It allows you to search for the mov
 - Lance Bontrager (https://github.com/1ance-301)
 
 ## Links
-- Website: 
+- Website: https://saadsyed98.github.io/Where2Watch/
 - Github: https://github.com/saadsyed98/Where2Watch.git
 
-## Demo
+## Screenshot
+<img width="1367" alt="Screen Shot 2021-09-23 at 5 59 01 PM" src="https://user-images.githubusercontent.com/87950314/134589787-adcbe0c5-63f9-48f9-a161-c6ad3cc2dbdf.png">
