@@ -1,4 +1,4 @@
-$(document).ready(() => {
+ $(document).ready(() => {
 //	console.log("we're active")
 	$('#searchForm').on('submit', (e) => {
 		let searchText = $('#searchText').val();
@@ -17,9 +17,10 @@ function getMovies(searchText) {
 			output += `
 			<div class = "col-md-3">
 			<div class = "well text-center">
-			<img src = "${movie.Poster}" 
-			<h5> ${movie.Title}</h5>
-			<a onclick = "movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
+			<h3> ${movie.Title}</h3>
+			<img src = "${movie.Poster}"> 
+			<a onclick = "movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">
+			<br> Click Here for Details </a>
 			`;
 		});
 		
@@ -48,7 +49,7 @@ function getMovie() {
 			<div class="col-md-4">
 				<img src="${movie.Poster}" class="thumbnail">
 			</div>
-			<div class="col-md-8">
+			<div class="twelve columns">
 				<h2>${movie.Title}</h2>
 				<ul class="list-group">
 				<li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
@@ -66,7 +67,8 @@ function getMovie() {
 			${movie.Plot}
 			<hr>
 			<a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-			<a href="index.html" class="btn btn-default">Go Back To Search</a>
+			<br>
+			<a href="/index.html" class="btn btn-default">Go Back To Search</a>
 			
 		`;
 		$('#movie').html(output);
