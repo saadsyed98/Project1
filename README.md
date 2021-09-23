@@ -9,6 +9,8 @@ A website that contains a library of movies. It allows you to search for the mov
 - Javascript
 - jQuery
 - Foundation
+- Axios
+- Font Awesome
 
 ## Made By
 - Saad Syed (https://github.com/saadsyed98)
