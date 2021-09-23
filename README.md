@@ -27,5 +27,4 @@ A website that contains a library of movies. It allows you to search for the mov
 - Github: https://github.com/saadsyed98/Where2Watch.git
 
 ## Screenshot
-<img width="1367" alt="Screen Shot 2021-09-23 at 5 59 01 PM" src="https://user-images.githubusercontent.com/87950314/134589787-adcbe0c5-63f9-48f9-a161-c6ad3cc2dbdf.png">
->>>>>>> f5f10284e69d06fafbda125be96730b53243ba94
+![Screen Shot 2021-09-23 at 7 02 40 PM](https://user-images.githubusercontent.com/87950314/134595052-a74b8c72-ad98-449a-9986-801d02432153.png)
