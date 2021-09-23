@@ -1,6 +1,5 @@
 # Where2Watch
-<<<<<<< HEAD
-asdfasdfasdf
+
 =======
 
 ## Description
