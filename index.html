@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
@@ -26,15 +27,17 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center">Search For Any Movie</h1>
-            <form id="searchForm">
-                <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
-                
+            <form class="example" id="searchForm" action="action_page.php">
+                <input type="text" class="form-control" id="searchText" placeholder="Search Movie" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
             </form>
         </div>
     </div>
 
-    
-    
+
+
     <div class="container">
         <div id="movies" class="row"></div>
     </div>
