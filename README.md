@@ -1,7 +1,7 @@
 # Where2Watch
 
 ## Description
-
+A website that contains a library of movies. It allows you to search for the movie and gives you several options based on what you typed. Each option gives you detailed info of that movie.
 
 ## Made With
 - HTML
