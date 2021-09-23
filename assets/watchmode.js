@@ -6,7 +6,6 @@ $(document).ready(() => {
             e.preventDefault();
         }); 
     });
-
     const settings = {
         "async": true,
         "crossDomain": true,
