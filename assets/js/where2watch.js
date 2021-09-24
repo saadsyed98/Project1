@@ -13,7 +13,7 @@ function getMovies(searchText) {
 		console.log(response);
 		let movies = response.data.Search;
 		let output = '';
-		$.each(movies, (movie-search, movie) => {
+		$.each(movies, (movieSearch, movie) => {
 			output += `
 			<div class = "col-md-3">
 			<div class = "well text-center">
