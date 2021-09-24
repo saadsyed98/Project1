@@ -8,7 +8,7 @@
 });
 
 function getMovies(searchText) {
-  axios.get('https://imdb8.p.rapidapi.com/auto-complete?s='+ searchText+'&apikey=thewdb') 
+  axios.get('https://imdb8.p.rapidapi.com/auto-complete?s='+ searchText+'&apikey') 
 	.then(response => {
 		console.log(response);
 		let movies = response.data.Search;
@@ -40,7 +40,7 @@ function movieSelected(id) {
 function getMovie() {
 	let movieId = sessionStorage.getItem('movieId');
 
-	axios.get('https://imdb8.p.rapidapi.com/auto-completei='+ movieId+'&apikey=thewdb') 
+	axios.get('https://imdb8.p.rapidapi.com/auto-completei='+ movieId+'&apikey') 
 	.then(response => {
 		console.log(response);
 		let movie = response.data;
