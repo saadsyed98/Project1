@@ -17,8 +17,8 @@ function getMovies(searchText) {
 			output += `
 			<div class = "col-md-3">
 			<div class = "well text-center">
-			<h3> ${movie.Title}</h3>
 			<img src = "${movie.Poster}"> 
+			<h3> ${movie.Title}</h3>
 			<a onclick = "movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">
 			<br> Click Here for Details </a>
 			`;
@@ -68,7 +68,7 @@ function getMovie() {
 			<hr>
 			<a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
 			<br>
-			<a href="/index.html" class="btn btn-default">Go Back To Search</a>
+			<a href="movie-search.html" class="btn btn-default">Go Back To Search</a>
 			
 		`;
 		$('#movie').html(output);
