@@ -68,7 +68,7 @@ function getMovie() {
 			<hr>
 			<a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
 			<br>
-			<a href="movie-search.html" class="btn btn-default">Go Back To Search</a>
+			<a href="./movieSearch.html" class="btn btn-default">Go Back To Search</a>
 			
 		`;
 		$('#movie').html(output);
